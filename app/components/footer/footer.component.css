@@ -1,0 +1,44 @@
+.footer{
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+}
+
+.footer-content h2{
+    background-color: white;
+    color: black;
+    padding-top: 1em;
+    font-size: 3em;
+}
+
+.footer-content h5 {
+    background-color: white;
+    color: black;
+    font-size: 1em;
+    text-align: center;
+}
+
+.social-networck{
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    margin-top: 1em;
+}
+
+.social-networck i {
+    background-color: white;
+    color: black;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.social-networck a{
+    color:black
+}

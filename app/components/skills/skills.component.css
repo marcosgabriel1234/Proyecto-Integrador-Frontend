@@ -1,0 +1,67 @@
+.container__skill{
+    /*color:white;
+    background:linear-gradient(#191c32, rgba(33, 16, 16, .8));*/
+    padding: 100px 0;
+    text-align:center;
+}
+
+.container__skill .skill{
+    max-width: 600px;
+    margin: 30px, auto;
+}
+
+.container__skill .skills .info{
+    display: flex;
+    justify-content: space-around;
+    color: #000;
+}
+
+.container__skill .skills .lista{
+    display: inline-block;
+    margin-right: 20px;
+    height: 10px;
+    width: 10px;
+    background-color: #191c32;
+}
+
+.container__skill .skills .barra{
+    background-color: gray;
+    width: 70%;
+    height: 6px;
+    margin: 10px 0;
+    margin-left: 18%;
+}
+
+.container__skill .skills .barra .barra_progreso1{
+    background-color: White;
+    width: 95%;
+    height: 6px;
+    animation: progreso1 2s forwards;
+}
+
+.container__skill .skills .barra .barra_progreso2{
+    background-color: White;
+    width: 80%;
+    height: 6px;
+    animation: progreso2 2s forwards;
+}
+
+@keyframes progreso1{
+    0%{
+        width: 0;
+    }
+
+    100%{
+        whidth: 95%;
+    }
+}
+
+@keyframes progreso2{
+    0%{
+        width: 0;
+    }
+
+    100%{
+        whidth: 80%;
+    }
+}

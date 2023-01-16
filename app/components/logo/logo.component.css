@@ -1,0 +1,114 @@
+.navBar{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.Brand span{
+    color: rgba(240, 28, 0, 0.842);
+    
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.menu .active{
+    color: rgba(240, 28, 0, 0.842);
+}
+
+.menu li:hover a{
+    background-color: rgba(240, 28, 0, 0.842);
+    color: #ffffff;
+    transition: ease-in .5s;
+    border-radius:20px;
+}
+
+.toggle-menu, .info-content__submit, .social-networck__main{
+    display: none;
+}
+@media screen and (max-width: 800px){
+    .menu{
+        flex-direction:column;
+        justify-content:center;
+        position:absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        height: 100vw;
+        background-color: #091046;
+        transform: translateX(-110%);
+        transition: all .5s ease-in-out;
+    }
+
+    .show-menu {
+        transform: translateX(0%);
+        transition: all .5s ease-in-out;
+    }
+
+    .menu li{
+        margin: 1.5em;
+        
+    }
+
+    .toggle-menu{
+        margin: 0.5em;
+        display: block; 
+    }
+
+    .fa-bars, .fa-close{
+        font-size: 2em;
+        margin-top: -.2em;
+    }
+
+    .toggle-menu .fa-close{
+        display:none;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .info-content > p, .download-cv{
+        display:none;
+    }
+
+    .info-content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-content .social-networck__main{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .info-content .social-networck__main i{
+
+        margin-left: 20%;
+    }
+
+    .main img{
+        width: min(65%, 350px);
+        height: auto;
+    }
+
+    .social-networck__main, .info-content__submit{
+        display: block;
+    }
+}
